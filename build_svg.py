@@ -92,7 +92,7 @@ def generate_svg():
     
     socials_svg = ""
     for i, (name, path, color, link) in enumerate(socials):
-        x = 220 + (i * 220)
+        x = 260 + (i * 220) # Properly centered now
         reveal_time = get_reveal_time(660) + (i * 0.15) # Fading upward one by one
         socials_svg += f'''
         <a href="{link}" target="_blank">
@@ -110,8 +110,8 @@ def generate_svg():
         ("Education", "Presidency University", "M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9z", False),
         ("Current Focus", "Building AI-powered products", "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z", False),
         ("Building", "Smart Campus Buddy, Career Forge &amp; more", "M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z", False),
-        ("Portfolio", "shanmukhchennuboina.dev", "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z", True),
-        ("Email", "shanmukh.chennuboina@gmail.com", "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z", False)
+        ("Portfolio", "github.com/shanmukh-dotcom/prof-portfollio-", "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z", True),
+        ("Email", "chennuboinashanmukh2007@gmail.com", "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z", False)
     ]
     
     info_svg = ""
@@ -245,7 +245,7 @@ def generate_svg():
                     <g opacity="0">
                         <animate attributeName="opacity" values="0;1" dur="0.6s" begin="{get_reveal_time(100)}s" fill="freeze" />
                         <animateTransform attributeName="transform" type="translate" values="0,8; 0,0" dur="0.6s" begin="{get_reveal_time(100)}s" fill="freeze" />
-                        <text x="0" y="50" font-size="52" font-weight="800" fill="url(#textGradient)">I'm Shanmukh</text>
+                        <text x="0" y="50" font-size="52" font-weight="800" fill="url(#gradientName)">I'm Shanmukh</text>
                         <text x="0" y="50" font-size="52" font-weight="800" fill="white" opacity="0.8">I'm </text>
                     </g>
                     
