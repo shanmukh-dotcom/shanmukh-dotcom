@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="assets/background.svg" alt="Shanmukh's GitHub README Portfolio Banner" width="100%" />
+  <img src="assets/background.svg?v=2" alt="Shanmukh's GitHub README Portfolio Banner" width="100%" />
 
 </div>
 
